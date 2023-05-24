@@ -6,7 +6,14 @@ def load_model():
   model=tf.keras.models.load_model('model_best.h5')
   return model
 model=load_model()
-st.write("""CATTLE IDENTIFICATION MODEL"""
+st.write("""# CATTLE IDENTIFICATION APP
+### Supported Cattles
+- Ayrshire
+- Brown Swiss
+- Holstein Friesian
+- Jersey
+- Red Dane
+"""
 )
 file=st.file_uploader("Choose cattle photo from computer",type=["jpg","png"])
 
