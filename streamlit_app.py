@@ -6,14 +6,15 @@ def load_model():
   model=tf.keras.models.load_model('model_best.h5')
   return model
 model=load_model()
-st.write("""# CATTLE IDENTIFICATION APP
+st.write("""# CATTLE IDENTIFICATION APP (GROUP 10)
 ### Supported Cattles
 - Ayrshire
 - Brown Swiss
 - Holstein Friesian
 - Jersey
 - Red Dane
-Group 10 Members: Emmanuel Pascua, Maxine Audrey Pulao, Juan Piolo Torrecampo
+
+Members: Emmanuel Pascua, Maxine Audrey Pulao, Juan Piolo Torrecampo
 """
 )
 file=st.file_uploader("Choose cattle photo from computer",type=["jpg","png"])
