@@ -13,6 +13,7 @@ st.write("""# CATTLE IDENTIFICATION APP
 - Holstein Friesian
 - Jersey
 - Red Dane
+Group 10 Members: Emmanuel Pascua, Maxine Audrey Pulao, Juan Piolo Torrecampo
 """
 )
 file=st.file_uploader("Choose cattle photo from computer",type=["jpg","png"])
@@ -33,6 +34,6 @@ else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
-    class_names=['Ayrshire cattle', 'Brown Swiss cattle', 'Holstein Friesian cattle', 'Jersey cattle', 'Red Dane cattle']
+    class_names=['Ayrshire Cattle', 'Brown Swiss Cattle', 'Holstein Friesian Cattle', 'Jersey Cattle', 'Red Dane Cattle']
     string="OUTPUT : "+class_names[np.argmax(prediction)]
     st.success(string)
